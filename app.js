@@ -4,6 +4,17 @@ const stop = document.getElementById("stop");
 const progress = document.getElementById("progress");
 const timestamp = document.getElementById("timestamp");
 
+
+const input = document.getElementById('link')
+const btnAdd = document.getElementById('btn')
+
+btnAdd.addEventListener('click',()=>{
+  const link = input.value
+  console.log(link);
+  video.src = link
+  video.play()
+})
+
 //play and pause///
 function toggelVideoStatus() {
   if(video.paused){
